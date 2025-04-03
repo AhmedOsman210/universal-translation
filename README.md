@@ -2,6 +2,13 @@ markdown
 Copy
 # Universal Translator
 
+![Screenshot 2025-04-03 224005](https://github.com/user-attachments/assets/5279e8f9-c804-4a04-88ec-0169cd4e30e6)
+
+![Screenshot 2025-04-03 224205](https://github.com/user-attachments/assets/90209a96-cd20-4f2f-992f-4ce9117546b8)
+
+![Screenshot 2025-04-03 224244](https://github.com/user-attachments/assets/736e0910-9ffd-4b01-9c6d-7cc19b08ca03)
+
+
 A modern, feature-rich translation web application built with React and TypeScript, powered by the MyMemory Translation API.
 
 ![Universal Translator Screenshot](https://via.placeholder.com/800x600.png?text=Universal+Translator+Screenshot) 
