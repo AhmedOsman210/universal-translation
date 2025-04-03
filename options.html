@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somali Translator Settings</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="assets/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="container mx-auto px-4 py-8 max-w-2xl">
+    <h1 class="text-3xl font-bold mb-8">Settings</h1>
+    
+    <div class="bg-white rounded-lg shadow p-6 space-y-6">
+      <div>
+        <h2 class="text-xl font-semibold mb-4">General Settings</h2>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <label class="text-gray-700">Dark Mode</label>
+            <label class="switch">
+              <input type="checkbox" id="darkMode">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="flex items-center justify-between">
+            <label class="text-gray-700">Enable Offline Mode</label>
+            <label class="switch">
+              <input type="checkbox" id="offlineMode">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Voice Settings</h2>
+        <div class="space-y-4">
+          <div>
+            <label class="block text-gray-700 mb-2">Default Speech Rate</label>
+            <input type="range" id="speechRate" min="0.5" max="2" step="0.1" value="1" class="w-full">
+            <div class="flex justify-between text-sm text-gray-500">
+              <span>Slower</span>
+              <span>Faster</span>
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-gray-700 mb-2">Voice Selection</label>
+            <select id="voiceSelect" class="w-full p-2 border rounded">
+              <option value="en-US">English (US)</option>
+              <option value="so-SO">Somali</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Saved Translations</h2>
+        <div id="savedTranslations" class="space-y-2">
+          <!-- Translations will be populated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

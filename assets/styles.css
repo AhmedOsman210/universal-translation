@@ -1,0 +1,55 @@
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark textarea,
+body.dark #translationResult {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #404040;
+}
+
+body.dark button {
+  background-color: #404040;
+}
+
+/* Translation popup */
+#somali-translator-popup {
+  max-width: 300px;
+  min-width: 100px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* PDF reader styles */
+.pdf-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pdf-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
